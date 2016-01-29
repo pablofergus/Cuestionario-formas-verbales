@@ -1,0 +1,88 @@
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex,nofollow">
+		<title>Experiment</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script src="mmturkey.0.5.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head> 
+	<body>
+
+		<div class="slide" id="instructions">
+  			<img src="logo-ucm.gif" alt="Universidad Complutense">
+			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
+			<p class="block-text">
+				En este cuestionario, se te presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Hay<span class="numberofquestions">{{}}</span> frases que completar.
+			</p>
+			<button type="button" onclick="experiment.intro()">Empieza</button>
+    		</p>
+			<p class="block-text" id="legal">
+  				Información legal: Al responder al cuestionario, participas en una investigación de lingüistas de la Universidad Complutense de Madrid acerca del aprendizaje del español como lengua extranjera.   
+  
+				Tu participación en el cuestionario es voluntario, y no habrá ninguna consecuencia adversa de no participar.  Los investigadores que solicitan tu participación guadarán la información que aportas en la más estricta confidencialidad, empleándola únicamente para la investigación sobre el aprendizaje del español.
+  			</p>
+		</div>
+
+		<div class="slide" id="intro">
+			<p class="notcentered"><b>Instrucciones</b></p>
+  
+			<p class="notcentered">Las frases que verás en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">{{}}</span> frases. Elige la forma verbal que te parezca mejor para completar la frase. Si te parece que las opciones son muy similares, elige la forma que te resulte más natural en la frase.
+			</p>
+ 
+</p>
+<p class="notcentered">Por favor, pincha en el EMPEZAR cuando estés preparado para empezar el cuestionario.</p>
+<button type="button" id="empieza" value="Begin" onclick="cuestionario.next(0)">Empieza</button>
+</div>
+<div class="slide" id="stage">
+  <p class="centered">Question <span id="qnumber">{{}}</span> of <span id="qtotal">{{}}</span></p>
+<br/>
+  
+<p class="pr" id="p1">{{}}</p>
+<p class="pr" id="p2">{{}}</p>
+<p class="pr" id="c">{{}}</p>
+
+<br/>
+
+
+  
+<p class="centered" id="responseprompt">¿Cuál es la mejor 
+  opción?</p> 
+
+<form id="fcform">
+<div class="response" id="ratings">
+	    <td><input class="opciona" name="(a)" type="radio" id="a1" value="opcionb" /></td>
+ <th><label for="v2">(a)</label></td>  
+	    <td><input class="opciona" name="opciona" type="radio"
+	       id="a2" value="accept" /></td>
+	      	    <th><label for="v1">Disagree</label></th>
+
+	 
+</div>	 
+
+	 <button type="button" class="continue" id="forcedcontinue">Continue</button>
+
+      </form>
+</div>
+
+</div>
+
+<div class="slide" id="language">
+	<p>Última pregunta: ¿cuál es tu lengua materna (la lengua que se
+	hablaba en tu casa durante tu infancia)?</p>
+  <p>Por favor escríbela a continuación, y pinchar en "Enviar" (NO pulsar
+	la tecla "intro"). 
+  <form id="lgform">
+  <input type="text" name="lg"></input>
+  <button type="button" id="lgsubmit">Submit</button>
+  </form>
+</div>
+
+<div class="slide" id="finished">
+	Has terminado el cuestionario - ¡muchas gracias por participar! Enviando...
+</div>
+
+<script src="animals.js" type="text/javascript"></script>
+
+    </body>
+</html>
