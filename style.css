@@ -21,7 +21,7 @@ input, select, button {font-family: Georgia, serif; font-size: 14px;}
     align: center;
 }
 
-button {
+#startButton {
 	background: url(button-gradient.png);
 	border: 1px solid #999;
 	border-top: 1px solid #e0e0e0;
@@ -70,10 +70,6 @@ This stuff will vary by experiment.
 }
 
 form {
-    text-align: center;
-}
-
-.response {
     text-align: center;
 }
 
