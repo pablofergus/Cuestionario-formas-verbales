@@ -1,4 +1,6 @@
-var qnumber = 0;
+var qnumber = 1;
+
+//Questions and answers stored in this array.
 var stimuli = [
    {
        name: "stim1",
@@ -349,9 +351,17 @@ var stimuli = [
        responseOption1: "me quedaba", 
        responseOption2: "me quede", 
 	   responseOption3: "me quedara"
-   }, 
+	}, 
 ];
 
+
+//Vars for the timer of each question.
+var timer = 0;
+var timings = [];
+var interval = 0;
+
+
+//Function to shuffle the array before picking the questions.
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -361,7 +371,6 @@ function shuffleArray(array) {
     }
     return array;
 }
-
 shuffleArray(stimuli);
 
 
@@ -377,20 +386,35 @@ function start() {
 	next();
 }
 
+function timerFix() {
+	timings.push('{time: "' + timer + '",question:}');
+	timer=0;
+	clearInterval(interval);
+	next();
+}
+
 function next(){
 	if (stimuli.length === 45) {
 		document.getElementById('stage').style.display = "none";
 		document.getElementById('language').style.display = "block";
 	} else {
-	qnumber++;
 	document.getElementById('qnumber').innerHTML = qnumber;
+	qnumber++;
+	var a = $('input[name="a"]:checked').val();
+	var b = $('input[name="b"]:checked').val();
+	var c = $('input[name="c"]:checked').val();
 	var stimulus = stimuli.shift();
 	document.getElementById('question').innerHTML = stimulus.question;
 	document.getElementById('a').innerHTML = '<td><input class="opciona" name="option" type="radio" id="a" value="opciona" /></td>' + stimulus.responseOption1;
 	document.getElementById('b').innerHTML = '<td><input class="opciona" name="option" type="radio" id="b" value="opcionb" /></td>' + stimulus.responseOption2;
 	document.getElementById('c').innerHTML = '<td><input class="opciona" name="option" type="radio" id="c" value="opcionc" /></td>' + stimulus.responseOption3;
+	interval=window.setInterval(function() {
+		timer++;
+		}, 1000);
 	}
+
 }
+
 
 function lgSubmit() {
 	document.getElementById('language').style.display = "none";
