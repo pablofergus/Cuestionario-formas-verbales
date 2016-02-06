@@ -5,7 +5,7 @@ var stimuli = shuffle([
        responseOption1: "ha llegado", 
        responseOption2: "llegó", 
        responseOption3: "llegaba",
-	   answer: responseOption1,
+	   answer: "ha llegado",
    },    
     {
        name: "stim2",
@@ -13,7 +13,7 @@ var stimuli = shuffle([
        responseOption1: "he terminado", 
        responseOption2: "terminé", 
 	   responseOption3: "terminaba",
-	   answer: responseOption1,
+	   answer: "he terminado",
    }, 
    {
        name: "stim3",
@@ -21,7 +21,7 @@ var stimuli = shuffle([
        responseOption1: "han salido"
 	   responseOption2: "salieron", 
 	   responseOption3: "salían",
-	   answer: responseOption1,
+	   answer: "han salido",
    }, 
    {
        name: "stim4",
@@ -29,14 +29,15 @@ var stimuli = shuffle([
        responseOption1: "han construido", 
        responseOption2: "construyeron", 
 	   responseOption3: "construían",
-	   answer: responseOption1,
+	   answer: "han construido",
    }, 
    {
        name: "stim5",
        question: "Ana y Luisa están muy contentas: ya _____________________ el maratón de Nueva York. Tienen unas fotos muy bonitas.", 
        responseOption1: "han corrido", 
        responseOption2: "corrieron", 
-	   responseOption3: "corrían"
+	   responseOption3: "corrían",
+	   answer: "han corrido",
    }, 
   {
        name: "stim6",
@@ -44,15 +45,15 @@ var stimuli = shuffle([
        responseOption1: "ha limpiado", 
        responseOption2: "limpiaron", 
 	   responseOption3: "limpiaban",
-	   answer: responseOption1,
+	   answer: "han salido",
    }, 
-   stim7: {
+   {
        name: "stim7",
        question: "Esto no puede continuar así. Pedro ya ___________________ tarde al trabajo tres veces esta semana.", 
        responseOption1: "ha llegado", 
        responseOption2: "llegó", 
 	   responseOption3: "llegaba",
-	   answer: responseOption1,
+	   answer: "ha llegado",
    }, 
    {
        name: "stim8",
@@ -60,7 +61,7 @@ var stimuli = shuffle([
        responseOption1: "han salido", 
        responseOption2: "salieron", 
 	   responseOption3: "salían",
-	   answer: responseOption1,
+	   answer: "han salido",
    }, 
    {
        name: "stim9",
@@ -68,7 +69,7 @@ var stimuli = shuffle([
        responseOption1: "se han reunido", 
        responseOption2: "se reunieron", 
 	   responseOption3: "se reunían",
-	   answer: responseOption1,
+	   answer: "se han reunido",
    }, 
    {
        name: "stim10",
@@ -76,7 +77,7 @@ var stimuli = shuffle([
        responseOption1: "he ido", 
        responseOption2: "fui", 
 	   responseOption3: "iba",
-	   answer: responseOption1,
+	   answer: "he ido",
    }, 
    {
        name: "stim11",
@@ -84,7 +85,7 @@ var stimuli = shuffle([
        responseOption1: "habéis corrido", 
        responseOption2: "corristeis", 
 	   responseOption3: "corríais",
-	   answer: responseOption1,
+	   answer: "habéis corrido",
    }, 
    {
        name: "stim12",
@@ -92,7 +93,7 @@ var stimuli = shuffle([
        responseOption1: "ha organizado", 
        responseOption2: "organizó", 
 	   responseOption3: "organizaba",
-	   answer: responseOption1,
+	   answer: "ha organizado",
    }, 
    {
        name: "stim13",
@@ -100,7 +101,7 @@ var stimuli = shuffle([
        responseOption1: "han vivido", 
        responseOption2: "vivieron", 
 	   responseOption3: "vivían",
-	   answer: responseOption1,
+	   answer: "han vivido",
    }, 
    {
        name: "stim14",
@@ -108,7 +109,7 @@ var stimuli = shuffle([
        responseOption1: "He trabajado", 
        responseOption2: "Trabajé", 
 	   responseOption3: "Trabajaba",
-	   answer: responseOption1,
+	   answer: "He trabajado",
    }, 
    {
        name: "stim15",
@@ -116,7 +117,7 @@ var stimuli = shuffle([
        responseOption1: "han salido", 
        responseOption2: "salieron", 
 	   responseOption3: "salían",
-	   answer: responseOption1,
+	   answer: "han salido",
    }, 
    {
        name: "stim16",
@@ -124,7 +125,7 @@ var stimuli = shuffle([
        responseOption1: "he pensado", 
        responseOption2: "pensé", 
 	   responseOption3: "pensaba",
-	   answer: responseOption1,
+	   answer: "he pensado",
    }, 
    {
        name: "stim17",
@@ -132,7 +133,7 @@ var stimuli = shuffle([
        responseOption1: "he sido", 
        responseOption2: "fui", 
 	   responseOption3: "era",
-	   answer: responseOption1,
+	   answer: "he sido",
    }, 
    {
        name: "stim18"
@@ -140,7 +141,7 @@ var stimuli = shuffle([
        responseOption1: "ha tenido",
        responseOption2: "tuve",
 	   responseOption3: "tenía",
-	   answer: responseOption1,
+	   answer: "ha tenido",
    }, 
    {
        name: "stim19"
@@ -148,7 +149,7 @@ var stimuli = shuffle([
        responseOption1: "ha ganado", 
        responseOption2: "ganó", 
 	   responseOption3: "ganaba",      
-	   answer: responseOption1,
+	   answer: "ha ganado",
    }, 
    {
        name: "stim20",
@@ -156,7 +157,7 @@ var stimuli = shuffle([
        responseOption1: "ha terminado", 
        responseOption2: "terminó", 
 	   responseOption3: "terminaba",
-	   answer: responseOption1,
+	   answer: "ha terminado",
    }, 
    {
        name: "stim21",
@@ -164,7 +165,7 @@ var stimuli = shuffle([
        responseOption1: "han ido", 
        responseOption2: "fueron", 
 	   responseOption3: "iban",
-	   answer: responseOption1,
+	   answer: "han ido",
    }, 
    {
        name: "stim22",
@@ -172,7 +173,7 @@ var stimuli = shuffle([
        responseOption1: "ha cantado", 
        responseOption2: "cantó", 
 	   responseOption3: "cantaba",
-	   answer: responseOption1,
+	   answer: "ha cantado",
    }, 
    {
        name: "stim23",
@@ -180,15 +181,15 @@ var stimuli = shuffle([
        responseOption1: "he visto", 
        responseOption2: "vi", 
 	   responseOption3: "veía",
-	   answer: responseOption1,
+	   answer: "he visto",
    }, 
-  {
+   {
        name: "stim24",
        question: "Este verano ___________________ un ascensor nuevo en mi edificio. Ahora van a cambiar la pintura.", 
        responseOption1: "han instalado", 
        responseOption2: "instalaron", 
 	   responseOption3: "instalaban",
-	   answer: responseOption1,
+	   answer: "han instalado",
    }, 
    {
        name: "stim25",
@@ -196,7 +197,7 @@ var stimuli = shuffle([
        responseOption1: "han salido", 
        responseOption2: "salieron", 
 	   responseOption3: "salían",
-	   answer: responseOption1,
+	   answer: "han salido",
    }, 
    {
        name: "stim25",
@@ -204,7 +205,7 @@ var stimuli = shuffle([
        responseOption1: "han salido", 
        responseOption2: "salieron", 
 	   responseOption3: "salían",
-	   answer: responseOption3,	   
+	   answer: "salían",	   
    }, 
    {
        name: "stim26",
@@ -212,7 +213,7 @@ var stimuli = shuffle([
        responseOption1: "ha terminado", 
        responseOption2: "terminó", 
 	   responseOption3: "terminaba",
-	   answer: responseOption3,	   
+	   answer: "salían",	   
    }, 
    {
        name: "stim27",
@@ -220,7 +221,7 @@ var stimuli = shuffle([
        responseOption1: "ha llegado", 
        responseOption2: "llegó", 
 	   responseOption3: "llegaba",
-	   answer: responseOption3,
+	   answer: "llegaba",
    }, 
    {
        name: "stim28",
@@ -228,22 +229,23 @@ var stimuli = shuffle([
        responseOption1: "han construido", 
        responseOption2: "construyeron", 
 	   responseOption3: "construían",
-	   answer: responseOption3,
+	   answer"construían",
    }, 
    {
        name: "stim29",
        question: "En ese momento, en el Parlamento ___________________ al presidente, pero por un problema técnico invalidaron la votación. La próxima semana tienen que votar otra vez.", 
        responseOption1: "han elegido", 
        responseOption2: "eligieron", 
-	   responseOption3: "elegían"   
+	   responseOption3: "elegían"
+	   answer: "elegían",
    }, 
-   stim30: {
+   {
        name: "stim30",
        question: "Juan ____________________ la cena en la cocina, pero tuvo que salir urgentemente y no pudo terminar.", 
        responseOption1: "ha preparado", 
        responseOption2: "preparó", 
 	   responseOption3: "preparaba",
-       answer: responseOption3,	   
+       answer: "preparaba",	   
    }, 
    {
        name: "stim31",
@@ -251,7 +253,7 @@ var stimuli = shuffle([
        responseOption1: "ha comprado / ha venido", 
        responseOption2: "compró / vino", 
 	   responseOption3: "compraba / venía",
-       answer: responseOption3,	   
+       answer: "compraba / venía",	   
    }, 
    {
        name: "stim32",
@@ -259,7 +261,7 @@ var stimuli = shuffle([
        responseOption1: "se ha examinado", 
        responseOption2: "se examinó", 
 	   responseOption3: "se examinaba",
-       answer: responseOption3,	   
+       answer: "se examinaba",	   
    }, 
    {
        name: "stim33",
@@ -267,7 +269,7 @@ var stimuli = shuffle([
        responseOption1: "han salido", 
        responseOption2: "salieron", 
 	   responseOption3: "salían",
-       answer: responseOption3,	   
+       answer: "salían",	   
    }, 
    {
        name: "stim34",
@@ -275,7 +277,7 @@ var stimuli = shuffle([
        responseOption1: "ha venido", 
        responseOption2: "vino", 
 	   responseOption3: "venía",
-       answer: responseOption3,	   
+       answer: "venía",	   
    }, 
    {
        name: "stim35",
@@ -283,7 +285,7 @@ var stimuli = shuffle([
        responseOption1: "ha terminado", 
        responseOption2: "terminó", 
 	   responseOption3: "terminaba",
-	   answer: responseOption3,
+	   answer: "terminaba",
    }, 
    {
        name: "stim36",
@@ -291,7 +293,7 @@ var stimuli = shuffle([
        responseOption1: "Ha llegado", 
        responseOption2: "Llegó", 
 	   responseOption3: "Llegaba",
-       answer: responseOption3,	   
+       answer:"llegaba",	   
    }, 
    {
        name: "stim37",
@@ -299,7 +301,7 @@ var stimuli = shuffle([
        responseOption1: "he estado", 
        responseOption2: "estuve", 
 	   responseOption3: "estaba",
-	   answer: responseOption2,
+	   answer:  "estuve",
    }, 
    {
        name: "stim38",
@@ -307,7 +309,7 @@ var stimuli = shuffle([
        responseOption1: "ha estado", 
        responseOption2: "estuvo", 
 	   responseOption3: "estaba",
-	   answer: responseOption2,
+	   answer: "estuvo",
    }, 
    {
        name: "stim39",
@@ -315,7 +317,7 @@ var stimuli = shuffle([
        responseOption1: "han estado", 
        responseOption2: "estuvieron", 
 	   responseOption3: "estaban",
-	   answer: responseOption2,
+	   answer: "estuvieron",
    }, 
    {
        name: "stim40",
@@ -323,7 +325,7 @@ var stimuli = shuffle([
        responseOption1: "han estado", 
        responseOption2: "estuvieron", 
 	   responseOption3: "estaban",
-	   answer: responseOption2,
+	   answer: "estuvieron",
    }, 
    {
        name: "stim41",
@@ -331,7 +333,7 @@ var stimuli = shuffle([
        responseOption1: "ha estado", 
        responseOption2: "estuvo", 
 	   responseOption3: "estaba",
-	   answer: responseOption2,
+	   answer: "estuvo",
    }, 
    {
        name: "stim42",
@@ -339,7 +341,7 @@ var stimuli = shuffle([
        responseOption1: "pudiera", 
        responseOption2: "pueda", 
 	   responseOption3: "podrá",
-	   answer: responseOption1,
+	   answer: "pudiera",
    }, 
    {
        name: "stim43",
@@ -347,7 +349,7 @@ var stimuli = shuffle([
        responseOption1: "des", 
        responseOption2: "dieras", 
 	   responseOption3: "das",
-	   answer: responseOption1,
+	   answer: "des",
    }, 
     {
        name: "stim44",
@@ -355,15 +357,15 @@ var stimuli = shuffle([
        responseOption1: "vendrás", 
        responseOption2: "vienes", 
 	   responseOption3: "vengas",
-	   answer: responseOption3,
+	   answer: "vengas",
    }, 
    {
        name: "stim45",
        question: "Julián ________________ trabajando en esa empresa unos años, pero al final decidió irse.", 
-       responseOption1: "han estado", 
+       responseOption1: "ha estado", 
        responseOption2: "estuvo", 
 	   responseOption3: "estaba",
-	   answer: responseOption2,
+	   answer: "estuvo",
    }, 
    {
        name: "stim46",
@@ -371,7 +373,7 @@ var stimuli = shuffle([
        responseOption1: "publicaron", 
        responseOption2: "publicaran", 
 	   responseOption3: "publiquen"
-	   answer: responseOption2,
+	   answer: "publicaran",
    }, 
    {
        name: "stim47",
@@ -379,7 +381,7 @@ var stimuli = shuffle([
        responseOption1: "molestarás", 
        responseOption2: "molestarías", 
 	   responseOption3: "molestes",
-	   answer: responseOption3,
+	   answer: "molestes",
    }, 
    {
        name: "stim48",
@@ -387,7 +389,7 @@ var stimuli = shuffle([
        responseOption1: "preocuparás", 
        responseOption2: "preocupas", 
 	   responseOption3: "preocupes",
-	   answer: responseOption3,
+	   answer: "preocupes",
    }, 
    {
        name: "stim49",
@@ -395,7 +397,7 @@ var stimuli = shuffle([
        responseOption1: "hace", 
        responseOption2: "hacía", 
 	   responseOption3: "hiciera",
-	   answer: responseOption1,
+	   answer: "hace",
    }, 
    {
        name: "stim50
@@ -403,7 +405,7 @@ var stimuli = shuffle([
        responseOption1: "me quedaba", 
        responseOption2: "me quede", 
 	   responseOption3: "me quedara",
-	   answer: responseOption2,
+	   answer: "me quede",
    }, 
 ]);
 var stimulus = stimuli.shift();
