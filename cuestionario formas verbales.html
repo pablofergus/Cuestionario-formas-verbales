@@ -26,47 +26,45 @@
 		</div>
 
 		<div class="slide" id="intro">
-		<form action="action_page.php"> 
-<p>En primer lugar, por favor responda a las siguientes preguntas.  A continuación comenzará la prueba sobre aprendizaje de formas verbales en español.</p>
-<form>
-<p class="notcentered"><br> Sexo: <br>
-  <input type="radio" name="sexo" value="hombre">Hombre<br>
-  <input type="radio" name="gender" value="mujer"> Mujer<br>
-</form>
-<form>
-<p class="notcentered"><br> Edad: <br>
-  <input type="radio" name="edad" value="menos de 30 años">Menos de 30 años<br>
-  <input type="radio" name="edad" value="entre 30 y 60 años"> Entre 30 y 60 años<br>
-  <input type="radio" name="edad" value="mayor de 60"> Más de 60 años<br>
-</form>
+			<form action="action_page.php"> 
+				<p><b>En primer lugar, por favor responda a las siguientes preguntas.  A continuación comenzará la prueba sobre aprendizaje de formas verbales en español.</b></p>
+				<form>
+				<p class="notcentered"><br> Sexo: <br>
+				  <td><input name="gender" type="radio" value="hombre" />Hombre</td>
+				  <td><input name="gender" type="radio" value="mujer" />Mujer</td>
+				</form>
+				<form>
+				<p class="notcentered"><br> Edad: <br>
+				  <td><input name="edad" type="radio" value="menos de 30 años" />Menos de 30 años</td>
+				  <td><input name="edad" type="radio" value="entre 30 y 60 años" />Entre 30 y 60 año</td>
+				  <td><input name="edad" type="radio" value="mayor de 60" />Más de 60 años</td>
+				</form>
 
+				<form>
+				  <fieldset>
+				  <p class="notcentered">Su lengua materna (la lengua hablada en casa durante su infancia), o si es usted bilingüe de nacimiento, sus lenguas maternas:<br>
+				  <p class="notcentered"><input size="50" type="text" name="lengua o lenguas maternas" id="userInputLanguage">
+				  <br>
 
-<form>
-  <fieldset>
-  <p class="notcentered">Su lengua materna (la lengua hablada en casa durante su infancia), o si es usted bilingüe de nacimiento, sus lenguas maternas:<br>
-  <p class="notcentered"><input type="text" name="lengua o lenguas maternas">
-  <br>
-  <p class="notcentered">Si usted sabe o ha estudiado alguna otra lengua, escriba cuáles, y el nivel de conocimientos que tenga para cada lengua:<br>
-  <p class="notcentered"><input type="text" name="otras lenguas y nivel">
-  <p class="notcentered">¿En qué curso del Instituto Cervantes está usted estudiando?
-  <p class="notcentered"><input type="text" name="curso en el Instituto Cervantes">
-  <p class="notcentered">¿Dónde ha aprendido usted el español? (Marque todas las opciones válidas)<br>
-  <input type="radio" name="donde aprendió" value="cursos en su país">En cursos en su país<br>
-  <input type="radio" name="donde aprendió" value="cursos países hispanos">En cursos en países hispanos.  Escriba cuál país y cuánto tiempo.<br>
-    <p class="notcentered"><input type="text" name="cursos país y tiempo"><br>
-  <input type="radio" name="donde aprendió" value=""> En viajes cortos a países hispanos.  Escriba cuáles países y el tiempo de estancia.<br>
-  <p class="notcentered"><input type="text" name="estancias país y tiempo"><br>
-  <input type="radio" name="donde aprendió" value=""> Ha vivido en países hispanos.  Escriba cuáles países y el tiempo de estancia.<br>
-  <p class="notcentered"><input type="text" name="residencia país y tiempo"><br>
-</fieldset>
-</form>
+				  <p class="notcentered">Si usted sabe o ha estudiado alguna otra lengua, escriba cuáles, y el nivel de conocimientos que tenga para cada lengua:<br>
+				  <p class="notcentered"><input size="50" type="text" name="otras lenguas y nivel" id="userInputOtherLang">
 
+				  <p class="notcentered">¿En qué curso del Instituto Cervantes está usted estudiando?
+				  <p class="notcentered"><input size="50" type="text" name="curso en el Instituto Cervantes">
 
-			<p class="notcentered"><b>Instrucciones</b></p>
-  
-			<p class="notcentered">Las frases que verás en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">{{}}</span> frases. Elige la forma verbal que te parezca mejor para completar la frase. Si te parece que las opciones son muy similares, elige la forma que te resulte más natural en la frase.
-			</p>
-			<p class="notcentered">Por favor, pincha en el EMPEZAR cuando estés preparado para empezar el cuestionario.</p>
+				  <p class="notcentered">¿Dónde ha aprendido usted el español? (Marque todas las opciones válidas)<br>
+				  <td><input name="donde aprendió" type="checkbox" value="cursos en su país" />En cursos en su país</td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="cursos países hispanos" />En cursos en países hispanos.  Escriba cuál país y cuánto tiempo.<br><input size="50" type="text" name="cursos país y tiempo"></td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="viajes cortos a países hispanos" />En viajes cortos a países hispanos.  Escriba cuáles países y el tiempo de estancia.<br><input type="text" size="50" name="viajes cortos a países hispanos"></td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="residencia país y tiempo" />Ha vivido en países hispanos. Escriba cuáles países y el tiempo de estancia.<br><input size="50" type="text" name="vresidencia país y tiempo"></td><br>
+				</fieldset>
+				</form>
+
+				<p class="notcentered"><b>Instrucciones</b></p>
+	  
+				<p class="notcentered">Las frases que verás en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">50</span> frases. Elige la forma verbal que te parezca mejor para completar la frase. Si te parece que las opciones son muy similares, elige la forma que te resulte más natural en la frase.
+				</p>
+				<p class="notcentered">Por favor, pincha en el EMPEZAR cuando estés preparado para empezar el cuestionario.</p>
 			<input id="startButton" type="button" name="Start" value="Empezar" onclick="start()" />
 		</div>
 		<div class="slide" id="stage">
@@ -80,27 +78,11 @@
 				<p class="pr" id="b">{{}}</p>
 				<p class="pr" id="c">{{}}</p>
 
-<<<<<<< HEAD
-				<input id="startButton" type="button" name="Next" value="Continue" onclick="timerFix()" />
-=======
-				<input id="startButton" type="button" name="Next" value="Siguiente" onclick="next()" />
->>>>>>> refs/remotes/AoifeAhern/master
+				<input id="startButton" type="button" name="Next" value="Siguente" onclick="timerFix()" />
 			</form>
-			<div id="test">0</div>
 
 		</div>
 
-	</div>
-
-	<div class="slide" id="language">
-		<p>Última pregunta: ¿cuál es tu lengua materna (la lengua que se
-		hablaba en tu casa durante tu infancia)?</p>
-	  <p>Por favor escríbela a continuación, y pinchar en "Enviar" (NO pulsar
-		la tecla "intro"). 
-	  <form id="lgform">
-	  <input type="text" name="lg"></input>
-	  <input id="lgsubmit" type="button" name="end" value="Enviar" onclick="lgSubmit()" />
-	  </form>
 	</div>
 
 	<div class="slide" id="finished">
