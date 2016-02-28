@@ -419,6 +419,7 @@ var timings = [];
 var interval = 0;
 var correct = true;
 var userInput = 0;
+var questions = [];
 
 
 //Function to shuffle the array before picking the questions.
@@ -444,13 +445,25 @@ function start() {
   userInputGender = $('input[name="gender"]:checked').val();
   userInputAge = $('input[name="edad"]:checked').val();
   userInputLanguage = $('input[name="lengua o lenguas maternas"]:text').val();
-  userInputOtherlang = $('input[name="otras lenguas y nivel"]:text').val();
+  userInputOtherLang = $('input[name="otras lenguas y nivel"]:text').val();
   userInputInstitute = $('input[name="curso en el Instituto Cervantes"]:text').val();
-  userInputLearn = $('input[name="curso en el Instituto Cervantes"]:text').val();
-  if (userInputGender == "hombre"||userInputGender == "mujer"&&userInputAge == "menos de 30 años"||userInputAge == "entre 30 y 60 años"||userInputAge == "mayor de 60"&&$('#userInputLanguage').val() !== ''&&$('#userInputOtherLang').val() !== ''&&$('#userInputLearn').val() !== ''&&userInputLearn == "cursos en su país"||userInputLearn == "cursos países hispanos"||userInputLearn == "viajes cortos a países hispanos"||userInputLearn == "residencia país y tiempo") {
+  userInputLearn = [];
+  if (document.getElementById('01').checked&&document.getElementById('02').checked) {
+    userInputLearn = "Cursos en su país y Cursos países hispanos: " + $('input[id="text01"]:text').val();
+  } else if (document.getElementById('01').checked) {
+    userInputLearn = ("Cursos en su país");
+  } else if (document.getElementById('02').checked) {
+    userInputLearn = "Cursos países hispanos: " + $('input[id="text01"]:text').val();
+  } else if (document.getElementById('03').checked) {
+    userInputLearn = "Viajes cortos a países hispanos: " + $('input[id="text02"]:text').val();
+  } else if (document.getElementById('04').checked) {
+    userInputLearn = "Ha vivido en países hispanos: " + $('input[id="text03"]:text').val();
+  }
+  if (userInputGender == "hombre"||userInputGender == "mujer"&&userInputAge == "menos de 30 años"||userInputAge == "entre 30 y 60 años"||userInputAge == "mayor de 60"&&$('#userInputLanguage').val() !== ''&&$('#userInputOtherLang').val() !== ''&&$('#userInputLearn').val() !== ''&&userInputLearn !== undefined) {
+    questions = "Sexo: " + userInputGender + ", Edad: " + userInputAge + ", LenguaMaterna: " + userInputLanguage + ", LenguaSecundaria: " + userInputOtherLang + ", InstitutoCervantes: " + userInputInstitute + ", DondeAprendió: " + userInputLearn;
     document.getElementById('intro').style.display = "none";
     document.getElementById('stage').style.display = "block";
-   next();
+    next();
   } else {
     alert("Por favor, responda a todas las preguntas en el formulario");
   }
@@ -509,4 +522,13 @@ function next(){
 function lgSubmit() {
 	document.getElementById('language').style.display = "none";
 	document.getElementById('finished').style.display = "block";
+  $.ajax({  
+     url: 'index.php', 
+     type: "POST",
+     dataType:'json', 
+     data: questions, //Pass the var to php?
+     success: function(data){
+         console.log(data);
+     }
+  });  
 }

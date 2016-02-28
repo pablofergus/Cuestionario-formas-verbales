@@ -10,6 +10,15 @@
 	</head> 
 	<body>
 
+<?php
+$questionData = ("questionData.txt");
+$text = $_POST;
+fwrite($questionData, $text); //not done yet :(
+echo $text
+?>
+
+
+
 		<div class="slide" id="instructions">
   			<img src="logo-ucm.gif" alt="Universidad Complutense">
 			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
