@@ -460,7 +460,7 @@ function start() {
     userInputLearn = "Ha vivido en países hispanos: " + $('input[id="text03"]:text').val();
   }
   if (userInputGender == "hombre"||userInputGender == "mujer"&&userInputAge == "menos de 30 años"||userInputAge == "entre 30 y 60 años"||userInputAge == "mayor de 60"&&$('#userInputLanguage').val() !== ''&&$('#userInputOtherLang').val() !== ''&&$('#userInputLearn').val() !== ''&&userInputLearn !== undefined) {
-    questions = "Sexo: " + userInputGender + ", Edad: " + userInputAge + ", LenguaMaterna: " + userInputLanguage + ", LenguaSecundaria: " + userInputOtherLang + ", InstitutoCervantes: " + userInputInstitute + ", DondeAprendió: " + userInputLearn;
+    questions = "Sexo: " + userInputGender + ",     Edad: " + userInputAge + ",     LenguaMaterna: " + userInputLanguage + ",     LenguaSecundaria: " + userInputOtherLang + ",     InstitutoCervantes: " + userInputInstitute + ",     DondeAprendió: " + userInputLearn;
     document.getElementById('intro').style.display = "none";
     document.getElementById('stage').style.display = "block";
     next();
@@ -488,7 +488,7 @@ function timerFix() {
   }
 
   if (userInputNum == 1||userInputNum == 2||userInputNum == 3) {
-    timings.push('{time: "' + timer + '", question: "' + stimulus.question + '", answer: "' + userInput + '", correct: "' + correct + '"}');
+    timings.push('{Time: "' + timer + '",      Question: "' + stimulus.question + '",      Answer: "' + userInput + '",      Correct: "' + correct + '"}\n');
     timer=0;
     clearInterval(interval);
     next();
@@ -497,9 +497,9 @@ function timerFix() {
 }
 
 function next(){
-	if (stimuli.length === 45) {
+	if (stimuli.length === 0) {
 		document.getElementById('stage').style.display = "none";
-		document.getElementById('language').style.display = "block";
+    lgSubmit();
 	} else {
 	document.getElementById('qnumber').innerHTML = qnumber;
 	qnumber++;
@@ -520,15 +520,17 @@ function next(){
 
 
 function lgSubmit() {
-	document.getElementById('language').style.display = "none";
 	document.getElementById('finished').style.display = "block";
+  var times = timings.join();
   $.ajax({  
-     url: 'index.php', 
+     url: '/submit.php', 
      type: "POST",
-     dataType:'json', 
-     data: questions, //Pass the var to php?
+     data: {q: questions, t: times}, //Pass the var to php?
      success: function(data){
          console.log(data);
-     }
-  });  
+     }}); 
+    //window.open("http://linguinvestigate.org/submit.php","_self");
+    $.get("submit.php");
+   return Math.PI;
+
 }
