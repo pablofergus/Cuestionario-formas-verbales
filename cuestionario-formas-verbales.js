@@ -5,7 +5,7 @@ var stimuli = shuffle([
        responseOption1: "ha llegado", 
        responseOption2: "llegó", 
        responseOption3: "llegaba",
-	   answer: "ha llegado",
+	   answer: "ha llegado"
    },    
     {
        name: "stim2",
@@ -17,8 +17,8 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim3",
-       question: "Voy a buscar a los niños: ya _________________ de la escuela. Me están esperando."
-       responseOption1: "han salido"
+       question: "Voy a buscar a los niños: ya _________________ de la escuela. Me están esperando.",
+       responseOption1: "han salido",
 	   responseOption2: "salieron", 
 	   responseOption3: "salían",
 	   answer: "han salido",
@@ -121,7 +121,7 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim16",
-       question: Siempre __________________ que la familia es muy importante en la vida de una persona. Estoy convencido de eso.", 
+       question: "Siempre __________________ que la familia es muy importante en la vida de una persona. Estoy convencido de eso.", 
        responseOption1: "he pensado", 
        responseOption2: "pensé", 
 	   responseOption3: "pensaba",
@@ -136,7 +136,7 @@ var stimuli = shuffle([
 	   answer: "he sido",
    }, 
    {
-       name: "stim18"
+       name: "stim18",
        question: "Alberto siempre ___________________ ideas conservadoras. Creo que, a sus años, no va a cambiar.", 
        responseOption1: "ha tenido",
        responseOption2: "tuve",
@@ -144,7 +144,7 @@ var stimuli = shuffle([
 	   answer: "ha tenido",
    }, 
    {
-       name: "stim19"
+       name: "stim19",
        question: "Este año, el Real Madrid ___________________ el campeonato de fútbol.", 
        responseOption1: "ha ganado", 
        responseOption2: "ganó", 
@@ -209,7 +209,7 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim26",
-       question: "Rosa___________________ de escribir el informe, pero una llamada telefónica le interrumpió y no pudo hacerlo." 
+       question: "Rosa___________________ de escribir el informe, pero una llamada telefónica le interrumpió y no pudo hacerlo." ,
        responseOption1: "ha terminado", 
        responseOption2: "terminó", 
 	   responseOption3: "terminaba",
@@ -229,14 +229,14 @@ var stimuli = shuffle([
        responseOption1: "han construido", 
        responseOption2: "construyeron", 
 	   responseOption3: "construían",
-	   answer"construían",
+	   answer: "construían",
    }, 
    {
        name: "stim29",
        question: "En ese momento, en el Parlamento ___________________ al presidente, pero por un problema técnico invalidaron la votación. La próxima semana tienen que votar otra vez.", 
        responseOption1: "han elegido", 
        responseOption2: "eligieron", 
-	   responseOption3: "elegían"
+	   responseOption3: "elegían",
 	   answer: "elegían",
    }, 
    {
@@ -372,7 +372,7 @@ var stimuli = shuffle([
        question: "-A: ¿Has leído la noticia? –B:  Sí, me enteré antes de que la__________________.", 
        responseOption1: "publicaron", 
        responseOption2: "publicaran", 
-	   responseOption3: "publiquen"
+	   responseOption3: "publiquen",
 	   answer: "publicaran",
    }, 
    {
@@ -400,7 +400,7 @@ var stimuli = shuffle([
 	   answer: "hace",
    }, 
    {
-       name: "stim50
+       name: "stim50",
        question: "–A: ¿Qué vas a hacer esta noche?  –B:  No sé, pero quizás _____________ en casa.", 
        responseOption1: "me quedaba", 
        responseOption2: "me quede", 

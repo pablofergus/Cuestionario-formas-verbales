@@ -10,7 +10,6 @@
 	</head> 
 	<body>
 		<div class="slide" id="instructions">
-  			<img src="logo-ucm.gif" alt="Universidad Complutense">
 			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
 			<p class="block-text">
 				En este cuestionario, se te presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Hay 50 frases que completar.
@@ -85,7 +84,7 @@
 	</div>
 
 	<div class="slide" id="finished">
-		Has terminado el cuestionario - ¡muchas gracias por participar! Enviando...
+		Has terminado el cuestionario - ¡muchas gracias por participar!
 	</div>
 
 <script src="animals.js" type="text/javascript"></script>
