@@ -200,14 +200,6 @@ var stimuli = shuffle([
 	   answer: "han salido",
    }, 
    {
-       name: "stim25",
-       question: "María y Pedro ___________________ cuando yo llegué, pero finalmente cambiaron de idea y se quedaron conmigo.", 
-       responseOption1: "han salido", 
-       responseOption2: "salieron", 
-	   responseOption3: "salían",
-	   answer: "salían",	   
-   }, 
-   {
        name: "stim26",
        question: "Rosa___________________ de escribir el informe, pero una llamada telefónica le interrumpió y no pudo hacerlo." ,
        responseOption1: "ha terminado", 
@@ -233,7 +225,7 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim29",
-       question: "En ese momento, en el Parlamento ___________________ al presidente, pero por un problema técnico invalidaron la votación. La próxima semana tienen que votar otra vez.", 
+       question: "En ese momento, en el Parlamento ___________________ al presidente, pero por un problema técnico interrumpieron la votación. La próxima semana tienen que votar otra vez.", 
        responseOption1: "han elegido", 
        responseOption2: "eligieron", 
 	   responseOption3: "elegían",
@@ -273,7 +265,7 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim34",
-       question: "-A: ¿Qué sabes de Cristina?  -B: No mucho. _________________ a Madrid el próximo fin de semana. Entonces podremos verla.", 
+       question: "-A: ¿Qué sabes de Cristina?  -B: No mucho. _________________ a Madrid el próximo fin de semana. Si llama, podremos verla.", 
        responseOption1: "ha venido", 
        responseOption2: "vino", 
 	   responseOption3: "venía",
@@ -321,7 +313,7 @@ var stimuli = shuffle([
    }, 
    {
        name: "stim40",
-       question: "Pasaron un día muy agradable en el pueblo: por la mañana ___________________ arreglando la casa, pero después de comerdieron un paseo y vieron cosas muy bonitas.", 
+       question: "Pasaron un día muy agradable en el pueblo: por la mañana ___________________ arreglando la casa, pero después de comer dieron un paseo y vieron cosas muy bonitas.", 
        responseOption1: "han estado", 
        responseOption2: "estuvieron", 
 	   responseOption3: "estaban",
