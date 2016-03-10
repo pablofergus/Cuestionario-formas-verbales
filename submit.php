@@ -13,10 +13,10 @@
 		$text = $_POST[q];
 		$timingsText = $_POST[t];
 		$questionData = fopen("questionData.txt", "a");
-		fwrite($questionData, $text."\n"."\n"); //not done yet :(
+		fwrite($questionData, $text."\n"); //not done yet :(
 		echo $text;
 
-		$timingsData = fopen("timingsData.txt", "a");
+		$timingsData = fopen("questionData.txt", "a");
 		fwrite($timingsData, $timingsText."\n"."\n");
 		echo "Formulario enviado, gracias por participar <br>";
 		echo $timingsText;

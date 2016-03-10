@@ -1,0 +1,20 @@
+Sexo: hombre,     Edad: menos de 30 años,     LenguaMaterna: English,     LenguaSecundaria: Alemán,     InstitutoCervantes: Madrid,     DondeAprendió: Cursos en su país
+{Time: "1",      Question: "Los expertos de la empresa no están preocupados por la situación actual. ________________ muchos años aquí y saben lo que tienen que hacer.",      Answer: "vivían",      Correct: "false"}
+,{Time: "1",      Question: ". - A: ¿Quién ha ganado el partido? - B: Aún es pronto para saberlo. El partido _________________ a las 21.30. Faltan veinte minutos para el final.",      Answer: "terminó",      Correct: "false"}
+,{Time: "1",      Question: "Este verano ___________________ un ascensor nuevo en mi edificio. Ahora van a cambiar la pintura.",      Answer: "han instalado",      Correct: "true"}
+,{Time: "0",      Question: "Ana y Luisa están muy contentas: ya _____________________ el maratón de Nueva York. Tienen unas fotos muy bonitas.",      Answer: "corrían",      Correct: "false"}
+
+
+
+
+
+Sexo: hombre,     Edad: menos de 30 años,     LenguaMaterna: 13,     LenguaSecundaria: 13,     InstitutoCervantes: 13,     DondeAprendió: Cursos en su país
+{Time: "1",      Question: "Los expertos de la empresa no están preocupados por la situación actual. ________________ muchos años aquí y saben lo que tienen que hacer.",      Answer: "vivían",      Correct: "false"}
+,{Time: "1",      Question: "En ese momento, en el Parlamento ___________________ al presidente, pero por un problema técnico invalidaron la votación. La próxima semana tienen que votar otra vez.",      Answer: "elegían",      Correct: "true"}
+,{Time: "0",      Question: "Este año, el Real Madrid ___________________ el campeonato de fútbol.",      Answer: "ganaba",      Correct: "false"}
+,{Time: "0",      Question: "No me gustó el comportamiento de Ramón: durante toda la fiesta _______________ bebiendo sin parar, sentado en una silla, solo y sin hablar con nadie. No le invitaré nunca más.",      Answer: "estaba",      Correct: "false"}
+
+
+
+
+

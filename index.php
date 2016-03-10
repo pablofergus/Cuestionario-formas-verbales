@@ -12,9 +12,13 @@
 		<div class="slide" id="instructions">
 			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
 			<p class="block-text">
-				En este cuestionario, se te presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Hay 50 frases que completar.
+				Bienvenido al cuestionario sobre formas verbales para estudiantes de español. En este cuestionario, se le presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Usted deberá elegir cuál de las tres opciones le parece mejor. Por ejemplo:
+				Hoy hace frío por lo que no nos _______________ salir.
+
+
+				Hay 50 frases que completar.
 			</p>
-			<input id="startButton" type="button" name="Begin" value="Empieza" onclick="begin()" />
+			<input id="startButton" type="button" name="Begin" value="Empieza" onclick="start()" />
     		</p>
 			<p class="block-text" id="legal">
   				Información legal: Al responder al cuestionario, participas en una investigación de lingüistas de la Universidad Complutense de Madrid acerca del aprendizaje del español como lengua extranjera.   
@@ -25,7 +29,7 @@
 
 		<div class="slide" id="intro">
 			<form action="action_page.php"> 
-				<p><b>En primer lugar, por favor responda a las siguientes preguntas.  A continuación comenzará la prueba sobre aprendizaje de formas verbales en español.</b></p>
+				<p><b>Ahora, para terminar, por favor responda a las siguientes preguntas.  En cuanto responda a esta parte habrá finalizado la prueba de aprendizaje de formas verbales en español.</b></p>
 				<form>
 				<p class="notcentered"><br> Sexo: <br>
 				  <td><input name="gender" type="radio" value="hombre" />Hombre</td>
@@ -52,19 +56,20 @@
 
 				  <p class="notcentered">¿Dónde ha aprendido usted el español? (Marque todas las opciones válidas)<br>
 				  <td><input name="donde aprendió" type="checkbox" value="cursos en su país" id="01"/>En cursos en su país</td><br>
-				  <td><input name="donde aprendió" type="checkbox" value="cursos países hispanos" id="02"/>En cursos en países hispanos.  Escriba cuál país y cuánto tiempo.<br><input size="50" type="text" name="cursos país y tiempo" id="text01"></td><br>
-				  <td><input name="donde aprendió" type="checkbox" value="viajes cortos a países hispanos" id="03"/>En viajes cortos a países hispanos.  Escriba cuáles países y el tiempo de estancia.<br><input type="text" size="50" name="viajes cortos a países hispanos" id="text02"></td><br>
-				  <td><input name="donde aprendió" type="checkbox" value="residencia país y tiempo" id="04"/>Ha vivido en países hispanos. Escriba cuáles países y el tiempo de estancia.<br><input size="50" type="text" name="vresidencia país y tiempo" id="text03"></td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="cursos países hispanos" id="02"/>En cursos en países hispanos.  Escriba qué país y cuánto tiempo.<br><input size="50" type="text" name="cursos país y tiempo" id="text01"></td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="viajes cortos a países hispanos" id="03"/>En viajes cortos a países hispanos.  Escriba qué países y el tiempo de estancia.<br><input type="text" size="50" name="viajes cortos a países hispanos" id="text02"></td><br>
+				  <td><input name="donde aprendió" type="checkbox" value="residencia país y tiempo" id="04"/>Ha vivido en países hispanos. Escriba qué países y el tiempo de estancia.<br><input size="50" type="text" name="vresidencia país y tiempo" id="text03"></td><br>
 				</fieldset>
 				</form>
 
 				<p class="notcentered"><b>Instrucciones</b></p>
 	  
-				<p class="notcentered">Las frases que verás en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">50</span> frases. Elige la forma verbal que te parezca mejor para completar la frase. Si te parece que las opciones son muy similares, elige la forma que te resulte más natural en la frase.
+				<p class="notcentered">Las frases que verá usted en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">50</span> frases. Elija la forma verbal que le parezca mejor para completar la frase. Si le parece que las opciones son muy similares, elija la forma que le resulte más natural en la frase.
 				</p>
-				<p class="notcentered">Por favor, pincha en el EMPEZAR cuando estés preparado para empezar el cuestionario.</p>
-			<input id="startButton" type="button" name="Start" value="Empezar" onclick="start()" />
+				<p class="notcentered">Por favor, pinche en el EMPEZAR cuando esté preparado para empezar el cuestionario.</p>
+			<input id="startButton" type="button" name="Start" value="Empezar" onclick="Begin()" />
 		</div>
+
 		<div class="slide" id="stage">
   			<h3 class="centered">Frase <span id="qnumber"></span> de <span id="qtotal">50</span></h3>
 			<br/>

@@ -488,7 +488,7 @@ function timerFix() {
   }
 
   if (userInputNum == 1||userInputNum == 2||userInputNum == 3) {
-    timings.push('{Time: "' + timer + '",      Question: "' + stimulus.question + '",      Answer: "' + userInput + '",      Correct: "' + correct + '"}\n');
+    timings.push('{Time: "' + timer + '",      Question: "' + stimulus.name + '",      Answer: "' + userInput + '",      Correct: "' + correct + '"}\n');
     timer=0;
     clearInterval(interval);
     next();
