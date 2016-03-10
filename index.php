@@ -12,13 +12,13 @@
 		<div class="slide" id="instructions">
 			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
 			<p class="block-text">
-				Bienvenido al cuestionario sobre formas verbales para estudiantes de español. En este cuestionario, se le presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Usted deberá elegir cuál de las tres opciones le parece mejor. Por ejemplo:
-				Hoy hace frío por lo que no nos _______________ salir.
+				Bienvenido al cuestionario sobre formas verbales para estudiantes de español. En este cuestionario, se le presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Usted deberá elegir cuál de las tres opciones le parece mejor. Por ejemplo:<p>
+				<p class="block-text">Hoy hace frío por lo que no nos _______________ salir.</p><br>
 
 
-				Hay 50 frases que completar.
+				<p class="block-text">Hay 50 frases que completar.</p>
 			</p>
-			<input id="startButton" type="button" name="Begin" value="Empieza" onclick="start()" />
+			<input id="startButton" type="button" name="Begin" value="Empieza" onclick="begin()" />
     		</p>
 			<p class="block-text" id="legal">
   				Información legal: Al responder al cuestionario, participas en una investigación de lingüistas de la Universidad Complutense de Madrid acerca del aprendizaje del español como lengua extranjera.   
@@ -67,7 +67,7 @@
 				<p class="notcentered">Las frases que verá usted en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">50</span> frases. Elija la forma verbal que le parezca mejor para completar la frase. Si le parece que las opciones son muy similares, elija la forma que le resulte más natural en la frase.
 				</p>
 				<p class="notcentered">Por favor, pinche en el EMPEZAR cuando esté preparado para empezar el cuestionario.</p>
-			<input id="startButton" type="button" name="Start" value="Empezar" onclick="Begin()" />
+			<input id="startButton" type="button" name="Start" value="Empezar" onclick="start()" />
 		</div>
 
 		<div class="slide" id="stage">

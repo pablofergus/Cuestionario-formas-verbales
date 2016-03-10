@@ -201,15 +201,7 @@ var stimuli = [
        responseOption2: "salieron", 
      responseOption3: "salían",
      answer: "han salido",
-   }, 
-   {
-       name: "stim25",
-       question: "María y Pedro ___________________ cuando yo llegué, pero finalmente cambiaron de idea y se quedaron conmigo.", 
-       responseOption1: "han salido", 
-       responseOption2: "salieron", 
-     responseOption3: "salían",
-     answer: "salían",     
-   }, 
+   },  
    {
        name: "stim26",
        question: "Rosa___________________ de escribir el informe, pero una llamada telefónica le interrumpió y no pudo hacerlo." ,
@@ -436,9 +428,10 @@ shuffleArray(stimuli);
 
 
 function begin() {
-	document.getElementById('intro').style.display = "block";
+  document.getElementById('stage').style.display = "block";
 	document.getElementById('instructions').style.display = "none";
 	document.getElementById('legal').style.display = "none";
+  next();
 }
 
 function start() {
@@ -462,8 +455,7 @@ function start() {
   if (userInputGender == "hombre"||userInputGender == "mujer"&&userInputAge == "menos de 30 años"||userInputAge == "entre 30 y 60 años"||userInputAge == "mayor de 60"&&$('#userInputLanguage').val() !== ''&&$('#userInputOtherLang').val() !== ''&&$('#userInputLearn').val() !== ''&&userInputLearn !== undefined) {
     questions = "Sexo: " + userInputGender + ",     Edad: " + userInputAge + ",     LenguaMaterna: " + userInputLanguage + ",     LenguaSecundaria: " + userInputOtherLang + ",     InstitutoCervantes: " + userInputInstitute + ",     DondeAprendió: " + userInputLearn;
     document.getElementById('intro').style.display = "none";
-    document.getElementById('stage').style.display = "block";
-    next();
+    lgSubmit();
   } else {
     alert("Por favor, responda a todas las preguntas en el formulario");
   }
@@ -499,7 +491,7 @@ function timerFix() {
 function next(){
 	if (stimuli.length === 0) {
 		document.getElementById('stage').style.display = "none";
-    lgSubmit();
+    document.getElementById('intro').style.display = "block";
 	} else {
 	document.getElementById('qnumber').innerHTML = qnumber;
 	qnumber++;
