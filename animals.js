@@ -172,7 +172,7 @@ var stimuli = [
    }, 
    {
        name: "stim22",
-       question: "Esta semana, Plácido Domingo ___________________ una ópera de Mozart en el Teatro Principal.", 
+       question: "Esta semana, Plácido Domingo ___________________ una ópera de Mozart en el Teatro Principal con la sala completamente llena. Un gran triunfo.", 
        responseOption1: "ha cantado", 
        responseOption2: "cantó", 
      responseOption3: "cantaba",
@@ -220,7 +220,7 @@ var stimuli = [
    }, 
    {
        name: "stim28",
-       question: "Aquí ______________________ un edificio completamente nuevo, pero no lo terminaron por culpa de la crisis.", 
+       question: "Aquí ______________________ un edificio completamente nuevo, pero no terminaron la construcción por culpa de la crisis.", 
        responseOption1: "han construido", 
        responseOption2: "construyeron", 
      responseOption3: "construían",
@@ -236,7 +236,7 @@ var stimuli = [
    }, 
    {
        name: "stim30",
-       question: "Juan ____________________ la cena en la cocina, pero tuvo que salir urgentemente y no pudo terminar.", 
+       question: "Juan ____________________ la cena en la cocina, pero tuvo que salir urgentemente y no pudo poner el pescado en el horno.", 
        responseOption1: "ha preparado", 
        responseOption2: "preparó", 
      responseOption3: "preparaba",
@@ -288,7 +288,7 @@ var stimuli = [
        responseOption1: "Ha llegado", 
        responseOption2: "Llegó", 
      responseOption3: "Llegaba",
-       answer:"llegaba",     
+       answer:"Llegaba",     
    }, 
    {
        name: "stim37",
@@ -300,7 +300,7 @@ var stimuli = [
    }, 
    {
        name: "stim38",
-       question: "El sábado salió a dar un paseo y __________________ mirando tiendas toda la mañana.", 
+       question:"El sábado salió y __________________ mirando tiendas toda la mañana.",  
        responseOption1: "ha estado", 
        responseOption2: "estuvo", 
      responseOption3: "estaba",

@@ -12,9 +12,12 @@
 		<div class="slide" id="instructions">
 			<p id='logo-text'>Universidad Complutense de Madrid, proyecto de investigación SPIRIM</p>
 			<p class="block-text">
-				Bienvenido al cuestionario sobre formas verbales para estudiantes de español. En este cuestionario, se le presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Usted deberá elegir cuál de las tres opciones le parece mejor. Por ejemplo:<p>
-				<p class="block-text">Hoy hace frío por lo que no nos _______________ salir.</p><br>
-
+				Bienvenido al cuestionario sobre formas verbales para estudiantes de español. Consiste en una serie de frases que hay que completar eligiendo una opción entre tres posibilidades.  Y finalmente, algunas preguntas sobre los idiomas que usted conoce y/o estudia. </p>
+				<p class="block-text">En este cuestionario, se le presentará una frase en la que falta por incluir una forma verbal, y tres opciones. Usted deberá elegir cuál de las tres opciones le parece mejor. Por ejemplo:</p>
+				<p class="block-text">Hoy hace frío por lo que no nos _______________ salir.</p>
+				<p class="pr"><td><input class="1" name="option" type="radio" id="d" value="4" /></td>apetece</p>
+				<p class="pr"><td><input class="1" name="option" type="radio" id="d" value="4" /></td>apetecemos</p>
+				<p class="pr"><td><input class="1" name="option" type="radio" id="d" value="4" /></td>apetecería</p>
 
 				<p class="block-text">Hay 50 frases que completar.</p>
 			</p>
