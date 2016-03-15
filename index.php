@@ -61,13 +61,11 @@
 				  <td><input name="donde aprendió" type="checkbox" value="residencia país y tiempo" id="04"/>Ha vivido en países hispanos. Escriba qué países y el tiempo de estancia.<br><input size="50" type="text" name="vresidencia país y tiempo" id="text03"></td><br>
 				</fieldset>
 				</form>
-
-				<p class="notcentered"><b>Instrucciones</b></p>
 	  
 				<p class="notcentered">Las frases que verá usted en este cuestionario están pensadas para ayudarnos a entender cómo se aprende a utilizar las diferentes formas verbales del español. El cuestionario incluye <span class="numberofquestions">50</span> frases. Elija la forma verbal que le parezca mejor para completar la frase. Si le parece que las opciones son muy similares, elija la forma que le resulte más natural en la frase.
 				</p>
 				<p class="notcentered">Por favor, pinche en el EMPEZAR cuando esté preparado para empezar el cuestionario.</p>
-			<input id="startButton" type="button" name="Start" value="Empezar" onclick="start()" />
+			<input id="startButton" type="button" name="Start" value="Terminar" onclick="start()" />
 		</div>
 
 		<div class="slide" id="stage">
