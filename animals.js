@@ -438,6 +438,7 @@ function start() {
   userInputGender = $('input[name="gender"]:checked').val();
   userInputAge = $('input[name="edad"]:checked').val();
   userInputLanguage = $('input[name="lengua o lenguas maternas"]:text').val();
+  userInputCountry = $('input[name="lugar y país de origen"]:text').val();
   userInputOtherLang = $('input[name="otras lenguas y nivel"]:text').val();
   userInputInstitute = $('input[name="curso en el Instituto Cervantes"]:text').val();
   userInputLearn = [];
@@ -453,7 +454,7 @@ function start() {
     userInputLearn = "Ha vivido en países hispanos: " + $('input[id="text03"]:text').val();
   }
   if (userInputGender == "hombre"||userInputGender == "mujer"&&userInputAge == "menos de 30 años"||userInputAge == "entre 30 y 60 años"||userInputAge == "mayor de 60"&&$('#userInputLanguage').val() !== ''&&$('#userInputOtherLang').val() !== ''&&$('#userInputLearn').val() !== ''&&userInputLearn !== undefined) {
-    questions = "Sexo: " + userInputGender + ",     Edad: " + userInputAge + ",     LenguaMaterna: " + userInputLanguage + ",     LenguaSecundaria: " + userInputOtherLang + ",     InstitutoCervantes: " + userInputInstitute + ",     DondeAprendió: " + userInputLearn;
+    questions = "Sexo: " + userInputGender + ",     Edad: " + userInputAge + ",     LenguaMaterna: " + userInputLanguage + ",     PaísDeOrigen: " + userInputCountry + ",     LenguaSecundaria: " + userInputOtherLang + ",     InstitutoCervantes: " + userInputInstitute + ",     DondeAprendió: " + userInputLearn;
     document.getElementById('intro').style.display = "none";
     lgSubmit();
   } else {

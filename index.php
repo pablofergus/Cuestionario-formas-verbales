@@ -51,6 +51,10 @@
 				  <p class="notcentered"><input size="50" type="text" name="lengua o lenguas maternas" id="userInputLanguage">
 				  <br>
 
+				  <p class="notcentered">Su lugar, provincia y país de origen:<br>
+				  <p class="notcentered"><input size="50" type="text" name="lugar y país de origen" id="userInputPlaceoforigin">
+				  <br>
+
 				  <p class="notcentered">Si usted sabe o ha estudiado alguna otra lengua, escriba cuáles, y el nivel de conocimientos que tenga para cada lengua:<br>
 				  <p class="notcentered"><input size="50" type="text" name="otras lenguas y nivel" id="userInputOtherLang">
 
