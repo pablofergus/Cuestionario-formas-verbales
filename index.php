@@ -82,7 +82,7 @@
 				<p class="pr" id="b">{{}}</p>
 				<p class="pr" id="c">{{}}</p>
 
-				<input id="startButton" type="button" name="Next" value="Siguente" onclick="timerFix()" />
+				<input id="startButton" type="button" name="Next" value="Siguiente" onclick="timerFix()" />
 			</form>
 
 		</div>
