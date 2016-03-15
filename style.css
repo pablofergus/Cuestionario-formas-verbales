@@ -3,6 +3,10 @@
 This stuff can be ported from experiment to experiment.*/
 
 /** We want the page to sit flush inside the browser window - that means no margins or padding. Also, use a nice-looking serif font. */
+p {
+  font-size: 1.1em;
+}
+
 .slide {
   text-align: center;
   width: 95%;

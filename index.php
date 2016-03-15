@@ -20,13 +20,14 @@
 				<p class="pr"><td><input class="1" name="option" type="radio" id="d" value="4" /></td>apetecería</p>
 
 				<p class="block-text">Hay 50 frases que completar.</p>
+				<p class="block-text">Por favor, responda a todas las frases sin interrupciones, de manera continuada, hasta el final de la prueba.</p>
 			</p>
 			<input id="startButton" type="button" name="Begin" value="Empieza" onclick="begin()" />
     		</p>
 			<p class="block-text" id="legal">
-  				Información legal: Al responder al cuestionario, participas en una investigación de lingüistas de la Universidad Complutense de Madrid acerca del aprendizaje del español como lengua extranjera.   
+  				Información legal: Al responder al cuestionario, participa usted en una investigación de lingüistas de la Universidad Complutense de Madrid acerca del aprendizaje del español como lengua extranjera.   
   
-				Tu participación en el cuestionario es voluntario, y no habrá ninguna consecuencia adversa de no participar.  Los investigadores que solicitan tu participación guadarán la información que aportas en la más estricta confidencialidad, empleándola únicamente para la investigación sobre el aprendizaje del español.
+				Su participación en el cuestionario es voluntaria, y no habrá ninguna consecuencia adversa de no participar.  Los investigadores que solicitan su participación guadarán la información que aporta en la más estricta confidencialidad, empleándola únicamente para la investigación sobre el aprendizaje del español.
   			</p>
 		</div>
 
