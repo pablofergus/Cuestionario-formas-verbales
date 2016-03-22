@@ -501,9 +501,9 @@ function next(){
 	var c = $('input[name="c"]:checked').val();
 	stimulus = stimuli.shift();
 	document.getElementById('question').innerHTML = stimulus.question;
-	document.getElementById('a').innerHTML = '<td><input class="opciona" name="option" type="radio" id="a" value="1" /></td>' + stimulus.responseOption1;
-	document.getElementById('b').innerHTML = '<td><input class="opciona" name="option" type="radio" id="b" value="2" /></td>' + stimulus.responseOption2;
-	document.getElementById('c').innerHTML = '<td><input class="opciona" name="option" type="radio" id="c" value="3" /></td>' + stimulus.responseOption3;
+	document.getElementById('aa').innerHTML = '<td><input class="opciona" name="option" type="radio" id="a" value="1" /></td>' + stimulus.responseOption1;
+	document.getElementById('ab').innerHTML = '<td><input class="opciona" name="option" type="radio" id="b" value="2" /></td>' + stimulus.responseOption2;
+	document.getElementById('ac').innerHTML = '<td><input class="opciona" name="option" type="radio" id="c" value="3" /></td>' + stimulus.responseOption3;
 	interval=window.setInterval(function() {
 		timer++;
 		}, 1000);
